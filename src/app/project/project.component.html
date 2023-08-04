@@ -1,0 +1,32 @@
+
+<div class="section" id="projects" style="position: absolute; top: 20%; width: 100%;">
+    <div class="container cc-education ">
+        <div class="h1 text-center mb-5 title animate__animated animate__zoomIn" [ngClass]="{'active': !profileService.checkBack ,'inactive': profileService.checkBack}">{{  'titles.title5' | translate }}</div>
+
+
+        <div class="row ">
+
+            <ng-container *ngFor="let project of projects| paginate: config  let i = index">
+                <div class="col-md-4 col-sm-6 animate-box animate__animated animate__fadeInLeft animate__delay-{{ i + 1 }}s" data-animate-effect="fadeInLeft" >
+                    <div class="blog-entry" [ngClass]="{'darkShadow': !profileService.checkBack ,'lightShadow': profileService.checkBack}">
+                        <div class="card">
+                            <img class="card-img-top" src={{project.imgUrl}} onerror="this.src = '/assets/gif.gif'" alt="Card image" style="width:100%">
+                            <div class="card-body">
+                                <h4 class="card-title">{{project.title}}</h4>
+                                <h5 class="card-text"><b>Technology :</b> {{project.tech}} </h5>
+                                <h5 class="card-text">{{project.desc}}</h5>
+
+                                <div style="display: flex; justify-content: center;">
+                                <a href={{project.githurl}} class="btn btn-primary stretched-link">GithubLink</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <pagination-controls class="ngx" style="position: relative; left: 30%; color: white;" (pageChange)="pageChanged($event)"></pagination-controls>
+
+    </div>
+    <app-footer></app-footer>
+</div>

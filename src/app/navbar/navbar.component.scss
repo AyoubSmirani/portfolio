@@ -1,0 +1,109 @@
+.contenair{
+    width: 200vh;
+    display: flex;
+    justify-content: center;
+    background-image: white
+}
+.contenair div .logo{
+    color:#d0d6e2  ;
+    margin-right: 140px;
+}
+
+.nav-item{
+    color:#d0d6e2  ;
+}
+.nav-link{
+    font-size: small;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 20px;
+    height: 10vh;
+    list-style: none;
+  }
+  
+  .menu li {
+    width: 125px;
+    height: 50px;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+  
+    a {
+      text-transform: uppercase;
+      font-size: 22px;
+      color: #000000;
+      text-decoration: none;
+      transition: all 0.45s;
+    }
+  
+    &:hover {
+      background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+      animation: line 1s;
+    }
+  
+    &:hover a {
+      color: #d94f5c;
+    }
+  
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
+  }
+  
+  @keyframes line {
+    0% {
+      background-position-x: 390px;
+    }
+  }
+  
+  
+  .menu-toggle-btn {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000000;
+  }
+  
+  /* Adjust this breakpoint based on when you want the button to appear */
+  @media screen and (max-width: 768px) {
+  
+ 
+    .menu {
+      /* Adjust menu position for mobile view */
+      position: absolute;
+      top: 90px; /* Adjust this value to properly position the menu */
+      right: 0px;
+      background-color: #ffffff;
+      padding: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      display: none;
+      z-index: 99;
+      height: auto;
+      width: 100%;
+     transform: translateX(5%);
+    
+    }
+  
+    .menu-open {
+      display: block; /* Show the menu items when the toggle is clicked */
+    }
+
+ 
+  
+    .menu li {
+      margin: 20px 0; /* Adjust margin for better spacing */
+    }
+  
+    .menu-toggle-btn {
+      display: block;
+      transform: translateX(-200px);
+      /* Show the menu toggle button on mobile */
+    }
+  
+  
+  }

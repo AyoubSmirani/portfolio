@@ -1,0 +1,24 @@
+
+
+
+
+
+
+
+  <select style="width: 80px;" #langSelect (change)="onLanguageChange(langSelect.value)">
+    <option
+      *ngFor="let lang of translate.getLangs()"
+      [value]="lang"
+      [attr.selected]="lang === translate.currentLang ? '' : null"
+    >{{ lang }} 
+    <ng-container [ngSwitch]="lang">
+        <i  *ngSwitchCase="'fr'" class="sl-flag flag-fr"><div id="germany"></div></i>
+        <i  *ngSwitchCase="'en'" class="sl-flag flag-usa"><div id="usa"></div></i>
+        <!-- Add more cases for other language flags if needed -->
+      </ng-container>
+
+</option>
+
+  </select>
+ 
+

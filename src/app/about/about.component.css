@@ -1,0 +1,41 @@
+
+.boxContain{width: 100%; 
+  height: 500px;
+   margin-top: 100px; 
+   box-sizing: border-box;
+    background-position: center; 
+     display: flex; 
+     justify-content: center;
+      align-items: center;
+       position: absolute;
+        top: 20%;  }
+
+.row p{
+    font-weight: 700px;
+    color:black;
+    
+}
+.card-body ul{
+    padding-left: 20px;
+}
+
+li{
+    padding-top: 5px;
+    
+  }
+  .active{
+    background-color: rgb(255, 251, 251);
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .inactive {
+    background-color: rgb(255, 251, 251);
+    color: black;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  }
+  @media screen and (max-width: 768px) {
+    .boxContain {
+      top: 40%;
+    }
+  
+  }

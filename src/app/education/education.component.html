@@ -1,0 +1,31 @@
+
+
+
+
+<div class="boxcontain">
+<div class="container cc-education">
+  <div class="h1 text-center mb-5 title animate__animated animate__zoomIn" [ngClass]="{'active': !profileService.checkBack ,'inactive': profileService.checkBack}" >{{  'titles.title4' | translate }}</div>
+
+  <div *ngFor="let education of educations" class="card animate__animated animate__bounceInUp" [ngClass]="{'darkShadow': !profileService.checkBack ,'lightShadow': profileService.checkBack}">
+    <div class="row"  >
+      <div class="col-md-3 " style="background-color:#d94f5c ;" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+        <div class="card-body cc-education-header">
+          <p>{{ education.year }}</p>
+          <div class="h5">{{ education.type }}</div>
+        </div>
+      </div>
+      <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+        <div class="card-body">
+          <div class="h5">{{ education.title }}</div>
+          <h4 class="category">{{ education.subtitle }}</h4>
+          <ul>
+            <li *ngFor="let item of education.items">{{ item }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<app-footer></app-footer>
+</div>

@@ -1,0 +1,153 @@
+{
+    "titles": {
+      "title1": "HOME",
+      "title2": "ABOUT",
+      "title3": "EXPERIENCE",
+      "title4": "EDUCATION",
+      "title5": "PROJECT",
+      "title6": "SKILLS",
+      "title7": "CONTACT"
+    },
+    "AcceuilData": {
+      "title1": "Hi!",
+      "title2": "I'm Ayoub Smirani",
+      "paragraph": "I am a web developer, and I am here to present myself in my professional portfolio. I hope you will enjoy the work I have created.",
+      "btn1": "View Projects",
+      "btn2": "Download CV"
+    },
+    "about1": "Passionate about innovation and everything related to generating new knowledge. I face problems with a smile and solve them as soon as possible. I am very mindful of the time I spend and the work I accomplish.",
+      
+      "about2": "Web developer with over 1 year of experience . Proficient with the Software Development Life Cycle (SDLC) and agile methodologies . Expertise in Angular, JavaScript, Node.js, and user interface (UI) design with responsive designs . Good understanding of Bootstrap, MongoDB, and MySQL . Additionally, I can also work on test automation using Selenium with the TestNG framework.",
+      "experienceData": [
+        {
+          "id": 2,
+          "company": "Les Ciments De Bizerte",
+          "location": "Bizerte",
+          "timeline": "Feb 2021 to June 2021",
+          "role": "Software Developer",
+          "work": "Technologies: Angular, Node JS, MySQL . Worked on the web application built with Angular for various activities and campaigns . This application aims to facilitate repetitive tasks for the company."
+        },
+        {
+          "id": 3,
+          "company": "Les Ciments De Bizerte",
+          "location": "Bizerte",
+          "timeline": "Feb 2021 to June 2021",
+          "role": "Software Developer",
+          "work": "Technologies: Angular, Node JS, MySQL . Worked on the web application built with Angular for various activities and campaigns . This application aims to facilitate repetitive tasks for the company."
+        },
+        {
+          "id": 1,
+          "company": "GHOUYOUTH ALHASIB",
+          "location": "Saudi Arabia, Riyadh",
+          "timeline": "July 2022",
+          "role": "Automation Tester",
+          "work": "Technologies: Selenium, TestNG, Robot . This project aimed to manage mining services . Tested applications to find bugs and developed an automation test program using Selenium."
+        }
+      ],
+      "projectData": [
+        {
+          "id": 1,
+          "title": "Price Comparison",
+          "desc": "The 'Price Comparison' project is a web application designed to help users compare prices of different products from various online retailers. Developed using Angular and Spring Boot, this application provides a user-friendly interface that allows users to search for a specific product and instantly get prices from multiple online sources. The Angular framework enables creating a responsive and dynamic user interface, ensuring a smooth user experience. The intuitive user interface allows users to enter the desired product and easily browse through the results. The application fetches real-time data from various online retailers, ensuring that users receive the most up-to-date pricing information.",
+          "livedemo": "https://mehulk05.github.io/MyShop/#/",
+          "githurl": "",
+          "mediumlink": "https://itnext.io/read-data-from-google-spreadsheet-in-angular-209ee74b6cb4",
+          "imgUrl": "/assets/com.png",
+          "tech": "Angular, Spring Boot, MySQL"
+        },
+        {
+          "id": 2,
+          "title": "Spring MVC CRUD",
+          "desc": "The 'springMVC-crud' project is a comprehensive web application developed using the Spring MVC framework. It offers robust CRUD (Create, Read, Update, Delete) functionality to manage data in a user-friendly way. Built on the powerful Java ecosystem, this project leverages the architecture of Spring MVC to provide a scalable and maintainable solution for your web application needs. CRUD Operations: Easily perform create, read, update, and delete operations on your data. The application provides a smooth user interface to efficiently manage records.",
+          "livedemo": "''",
+          "githurl": "https://github.com/AyoubSmirani/springMVC-crud/tree/master",
+          "mediumlink": "https://itnext.io/blog-app-using-mern-stack-b0b4d69d7ea1",
+          "imgUrl": "/assets/crud S.png",
+          "tech": "Spring MVC"
+        },
+        {
+          "id": 3,
+          "title": "Leave and Training Management System",
+          "desc": "We are proud to present our revolutionary Leave and Training Management System, a comprehensive software solution designed to transform how organizations manage their human resources. Our cutting-edge system integrates efficient modules for employee leave, personnel data, accounts, training, and training assignment. Leveraging Angular, Express.js, Node.js, and MySQL technologies, our solution offers seamless performance and empowers HR departments to optimize their operations.",
+          "livedemo": "https://mehulk05.github.io/Blog-using-mean/#/",
+          "githurl": "https://github.com/AyoubSmirani/ApplicationWebGestionCongee/tree/master/GestionDesCongee",
+          "mediumlink": "https://itnext.io/crud-operation-using-mean-stack-7dfa2f51ec8c",
+          "imgUrl": "/assets/sys.png",
+          "tech": "Angular 10, Node, MySQL, Express"
+        },
+        {
+          "id": 4,
+          "title": "Multiroom Chat Application in Node JS",
+          "desc": "''",
+          "livedemo": "https://chatapp-using-node.herokuapp.com/",
+          "githurl": "https://github.com/mehulk05/Chat-app-using-Nodejs",
+          "mediumlink": "https://medium.com/weekly-webtips/building-a-multiroom-chat-application-in-node-js-8a8adca5acf2",
+          "imgUrl": "assets/images/z23.png",
+          "tech": "Node JS, Socket IO"
+        },
+        {
+          "id": 5,
+          "title": "Integrate Medium Blogs on your React App",
+          "desc": "",
+          "livedemo": "https://mehulk05.github.io/Medium-Blog-On-React-App#/",
+          "githurl": "https://github.com/mehulk05/Medium-Blog-On-React-App",
+          "mediumlink": "https://javascript.plainenglish.io/how-to-add-medium-blogs-on-your-react-app-a3898a729aad",
+          "imgUrl": "assets/images/z4.png",
+          "tech": "React JS"
+        },
+        {
+          "id": 6,
+          "title": "News App using ReactJS (Parsing XML to JSON)",
+          "desc": "",
+          "livedemo": "https://mehulk05.github.io/NewsApp-using-React",
+          "githurl": "https://github.com/mehulk05/NewsApp-using-React",
+          "mediumlink": "https://codeburst.io/news-app-using-reactjs-f9752d7ab6ce",
+          "imgUrl": "assets/images/z24.png",
+          "tech": "React JS, XML to JSON"
+        }
+      ]
+      ,
+      "educationData": [
+        {
+        "year": "2020 - 2023",
+        "type": "Degree",
+        "title": "Bachelor's in Business Computing",
+        "subtitle": "Specialization in Business Intelligence",
+        "items": [
+        "Higher Institute of Business Management in Bizerte.",
+        "Applied computing in economics and management simplifies repetitive tasks, improves operational efficiency, and minimizes potential errors.",
+        "Maintained above-average grades throughout each academic semester."
+        ]
+        },
+        {
+        "year": "2018 - 2019",
+        "type": "High School Diploma",
+        "title": "High School Diploma in Economics and Management",
+        "subtitle": "Menzel Jemil Secondary School",
+        "items": [
+        "Combining economics and management with computer science allows for precise data analysis, helping to identify trends and patterns for informed decision-making.",
+        "Through a data-driven approach, the combination of these fields offers more informed and cost-effective decisions for businesses and projects."
+        ]
+        },
+        {
+        "year": "2015 - 2018",
+        "type": "Secondary School",
+        "title": "Menzel Jemil Secondary School",
+        "subtitle": "Secondary Education",
+        "items": [
+        "Secondary school curriculum focused on the following subjects: mathematics, English, sciences, computer science, economics and management, literature, and languages."
+        ]
+        }
+        ],
+        "formContent":{ 
+          "name":"Name",
+          "email":"Email",
+          "subject":"Subject",
+          "tel":"22591468",
+          "myEmail":"ayoubsmirani9@gmail.com",
+          "message":"Your Message"
+
+      }
+      
+  }
+  

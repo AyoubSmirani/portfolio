@@ -1,0 +1,30 @@
+
+  
+<div style="display: flex; flex-direction: column; width: 100%;">
+     <div class="boxContain">
+          <div class="info-container">
+               <h3>{{ 'AcceuilData.title1' | translate}}</h3>
+               <h1 [ngClass]="{'active': !profileService.checkBack ,'inactive': profileService.checkBack}">{{ 'AcceuilData.title2' | translate}}</h1>
+               <p [ngClass]="{'active': !profileService.checkBack ,'inactive': profileService.checkBack}">{{ 'AcceuilData.paragraph' | translate}}</p>
+               <div class="btn-container" >
+                    <a class="btn  smooth-scroll mr-2" href="#contact" mdbRipple data-aos="zoom-in"
+                    data-aos-anchor="data-aos-anchor">{{ 'AcceuilData.btn1' | translate}}</a>
+                    <a class="btn "  href="#contact"  data-aos="zoom-in" mdbRipple
+                    data-aos-anchor="data-aos-anchor">{{ 'AcceuilData.btn2' | translate}}</a>
+                   </div>
+          </div>
+          <div style="padding-right: 100px;">
+               <img src="/assets/ayou.png" class=" mb-3 animate__animated animate__bounce " style="width: 800px; height: 800px; " alt="Avatar" />
+    
+
+          </div>
+ 
+     </div>
+     
+     <app-footer></app-footer>
+</div>
+
+
+     
+
+

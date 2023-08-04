@@ -1,0 +1,163 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.s-section {
+    height: 100vh;
+    z-index: 0;
+  }
+
+  form, .toggle:before, .toggle:after {
+    background: hsl(0,0%,90%);
+  }
+  form, .toggle {
+    position: relative;
+    top: -910px;
+    right: -50px;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .curtain, .sr, .toggle:before, .toggle:after {
+    position: absolute;
+  }
+  .curtain, .toggle:before, .toggle:after {
+    transition: transform var(--dur);
+  }
+  .curtain, .toggle:before, .toggle:checked:after  {
+    transition-timing-function: ease-out;
+  }
+  .curtain, .sr {
+    top: 0;
+    left: 0;
+  }
+  .curtain {
+    background: hsl(0,0%,100%);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+  }
+  .sr, .toggle {
+    overflow: hidden;
+  }
+  .sr {
+    clip: rect(1px,1px,1px,1px);
+    color: transparent;
+    width: 1px;
+    height: 1px;
+  }
+  .toggle {
+    background: currentColor;
+    border-radius: 0.75em;
+    cursor: pointer;
+    width: 3em;
+    height: 1.5em;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .toggle:before, .toggle:after {
+    border-radius: 50%;
+    content: "";
+    display: block;
+    top: 0.25em;
+    left: 0.25em;
+    width: 1em;
+    height: 1em;
+  }
+  .toggle:before, .toggle:checked:after {
+    transition-delay: 0s;
+  }
+  .toggle:checked:before, .toggle:after {
+    transition-delay: calc(var(--dur) * 0.75);
+    transition-timing-function: cubic-bezier(0.3,1.6,0.5,0.7);
+  }
+  .toggle:before {
+    transform: translateX(-1.5em);
+  }
+  .toggle:checked:before {
+    transform: translateX(1.5em);
+  }
+  .toggle:checked:after {
+    transform: translateX(3em);
+  }
+  .toggle:checked ~ .curtain {
+    transform: scaleX(1);
+  }
+  .toggle:focus {
+    outline: transparent;
+  }
+
+  /*****************************************************************************************************************/
+  label {
+	width:100px;
+	height:50px;
+	position: relative;
+	display: block;
+	background: #ebebeb;
+	border-radius: 100px;
+	box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+	cursor: pointer;
+	transition: 0.3s;
+}
+label:after {
+	content: "";
+	width:50px;
+	height: 50px;
+	position: absolute;
+	top:0px;
+	left:0px;
+	background: linear-gradient(180deg,#ffcc89,#d8860b);
+	border-radius: 50px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+	transition: 0.3s;
+}
+input {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+input:checked + label {
+	background: #242424;
+}
+input:checked + label:after {
+	left:55px;
+	transform: translateX(-10%);
+	background: linear-gradient(180deg,#777,#3a3a3a);
+}
+label:active:after{
+	width: 20px;
+}
+
+input:checked + label + .background {
+	background:#242424;
+}
+label svg {
+	position: absolute;
+	width: 25px;
+	top:15px;
+	z-index: 100;
+}
+label svg.sun {
+	left:10px;
+	fill:#fff;
+	transition: 0.3s;
+}
+label svg.moon {
+	left:63px;
+	fill:#7e7e7e;
+	transition: 0.3s;
+}
+input:checked + label svg.sun {
+	fill:#7e7e7e;
+}
+input:checked + label svg.moon {
+	fill:#fff;
+}
