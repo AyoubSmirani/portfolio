@@ -1,0 +1,60 @@
+
+<div class="boxContain">
+<div class="section animate__animated animate__zoomIn"  id="about">
+    <div class="container mt-16" >
+      <div class="card" data-aos="fade-up" data-aos-offset="10" [ngClass]="{'active': !profileService.checkBack ,'inactive': profileService.checkBack}">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="card-body">
+              <div class="h4 mt-0 title" >À propos de moi</div>
+              <div>
+                <ul>
+                  <li *ngFor="let m of about2 | split">{{m}}</li>
+                </ul>
+              </div>
+               <p>{{'about1' | translate}}</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="card-body">
+              <div class="h4 mt-0 title">Informations de base</div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <strong class="text-uppercase">DATE DE NAISSANCE :</strong>
+                </div>
+                <div class="col-sm-8">10 octobre 1998</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4">
+                  <strong class="text-uppercase">Email:</strong>
+                </div>
+                <div class="col-sm-8">ayoubsmirani9@gmail.com</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4">
+                  <strong class="text-uppercase">TÉLÉPHONE :</strong>
+                </div>
+                <div class="col-sm-8">+216 22591468</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4">
+                  <strong class="text-uppercase">ADRESSE :</strong>
+                </div>
+                <div class="col-sm-8">D-101,Trishla Appartment,near sakar school,new cg chandkheda,Ahmedabad,382424
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-sm-4">
+                  <strong class="text-uppercase">LANGUE :</strong>
+                </div>
+                <div class="col-sm-8">Français Arabe Anglais</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<app-footer></app-footer>

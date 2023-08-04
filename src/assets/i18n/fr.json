@@ -1,0 +1,175 @@
+{
+    "titles":{
+        "title1": "acceuil",
+        "title2": "À PROPOS",
+        "title3": "EXPERIENCE",
+        "title4": "EDUCATION",
+        "title5": "PROJECT",
+        "title6": "COMPÉTENCES",
+        "title7": "CONTACT"
+    },
+    "AcceuilData":{
+        "title1":"salut!",
+        "title2":"Je Suis Ayoub Smirani",
+        "paragraph":"Je suis développeur web, et je suis ici pour me présenter dans mon portfolio professionnel. J'espère que vous apprécierez le travail que j'ai créé.",
+        "btn1":"Voir les projets",
+        "btn2":"Télécharger CV"
+    },
+   
+        
+    "about1": " Amoureux de l'innovation et de tout ce qui est lié à la génération de nouvelles connaissances. Je fais face aux problèmes avec le sourire et les résous dès que possible. Je suis très attentif au temps que je passe et au travail que j'accomplis."
+      ,
+      "about2":  "Développeur web avec plus de 1 ans d'expérience . Travailleur avec le cycle de vie du développement logiciel (SDLC) et les méthodologies agiles . Expertise en Angular, JavaScript, Node JS et conception d'interfaces utilisateur (UI) avec des designs réactifs  Bonne compréhension de  Bootstrap, MongoDB et MySQL . En plus de tout cela, je peux également travailler sur l'automatisation des tests en utilisant Selenium avec le framework TestNG.",
+       
+      "experienceData":  [
+         {
+            "id": 2,
+            "company": "Les Ciments De Bizerte",
+            "location": "Bizerte",
+            "timeline": "Feb 2021 to June 2021",
+            "role": "Software Developer",
+            "work": "Technologies : Angular , Node JS , My SQL . Travail sur l'application web construite en Angular pour différentes activités et campagnes .  cette application permet de faciliter des taches repetitive pour la societe."
+          },
+         {
+           "id": 3,
+           "company": "Les Ciments De Bizerte",
+           "location": "Bizerte",
+           "timeline": "Feb 2021 to June 2021",
+           "role": "Software Developer",
+           "work": "Technologies : Angular , Node JS , My SQL . Travail sur l'application web construite en Angular pour différentes activités et campagnes .  cette application permet de faciliter des taches repetitive pour la societe."
+         },
+
+     
+         {
+           "id": 1,
+           "company": "GHOUYOUTH ALHASIB",
+           "location": "Arabie saoudite , Riyad",
+           "timeline": " Juillet 2022",
+           "role": "Automation Tester",
+           "work": "Technologies :  Selenium , Test Ng , Robot . Ce projet visait à gérer les services miniers . tester des applications afin de trouver des bogues et de développer un programme de test d'automatisation utilisant le sélénium."
+         }
+     
+     
+       ],
+       "projectData": [
+         {
+           "id": 1,
+           "title": "Comparateur de prix",
+           "desc": "Le projet 'Comparateur de prix' est une application web conçue pour aider les utilisateurs à comparer les prix de différents produits provenant de différents détaillants en ligne. Développée à l'aide d'Angular et Spring Boot, cette application offre une interface conviviale qui permet aux utilisateurs de rechercher un produit spécifique et d'obtenir instantanément les prix de plusieurs sources en ligne Le framework Angular permet de créer une interface utilisateur réactive et dynamique, garantissant une expérience utilisateur fluide. L'interface utilisateur intuitive permet aux utilisateurs de saisir le produit souhaité et de parcourir facilement les résultats. L'application récupère des données en temps réel à partir de différents détaillants en ligne, assurant que les utilisateurs reçoivent les informations tarifaires les plus récentes."
+           ,
+           "livedemo": "https://mehulk05.github.io/MyShop/#/",
+           "githurl": "",
+           "mediumlink": "https://itnext.io/read-data-from-google-spreadsheet-in-angular-209ee74b6cb4",
+           "imgUrl": "/assets/com.png",
+           "tech": "Angular , Spring boot, Mysql"
+         },
+     
+         {
+           "id": 2,
+           "title": "Spring MVC Crud",
+           "desc": "Le projet 'springMVC-crud' est une application web complète développée en utilisant le framework Spring MVC. Il offre une fonctionnalité robuste CRUD (Create, Read, Update, Delete) pour gérer les données de manière conviviale. Construit sur la puissante écosystème Java, ce projet tire parti de l'architecture de Spring MVC pour fournir une solution évolutive et maintenable pour vos besoins d'application web. Opérations CRUD : Effectuez facilement des opérations de création, lecture, mise à jour et suppression sur vos données. L'application offre une interface utilisateur fluide pour gérer efficacement les enregistrements.",
+           "livedemo": "''",
+           "githurl": "https://github.com/AyoubSmirani/springMVC-crud/tree/master",
+           "mediumlink": "https://itnext.io/blog-app-using-mern-stack-b0b4d69d7ea1",
+           "imgUrl": "/assets/crud S.png",
+           "tech": "Spring MVC"
+         },
+     
+     
+         {
+           "id": 3,
+           "title": "Système de gestion des congées et des formations",
+           "desc": "Nous sommes fiers de présenter notre système de gestion des congées et des formations révolutionnaire, une solution logicielle complète conçue pour révolutionner la façon dont les organisations gèrent leurs ressources humaines. Notre système de pointe intègre des modules efficaces pour la gestion des congés des employés, des données du personnel, des comptes, de la formation et de l'attribution des formations. Tirant parti des technologies Angular, Express.js, Node.js et MySQL, notre solution offre des performances transparentes et renforce les RHdépartements pour optimiser leurs opérations",
+           "livedemo": "https://mehulk05.github.io/Blog-using-mean/#/",
+           "githurl": "https://github.com/AyoubSmirani/ApplicationWebGestionCongee/tree/master/GestionDesCongee",
+           "mediumlink": "https://itnext.io/crud-operation-using-mean-stack-7dfa2f51ec8c",
+           "imgUrl": "/assets/sys.png",
+           "tech": "Angular 10, Node, My SQL, Express"
+         },
+     
+         {
+           "id": 4,
+           "title": "Multiroom Chat Application in Node JS",
+           "desc": "''",
+           "livedemo": "https://chatapp-using-node.herokuapp.com/",
+           "githurl": "https://github.com/mehulk05/Chat-app-using-Nodejs",
+           "mediumlink": "https://medium.com/weekly-webtips/building-a-multiroom-chat-application-in-node-js-8a8adca5acf2",
+           "imgUrl": "assets/images/z23.png",
+           "tech": "Node JS,Socket IO"
+         },
+     
+     
+         {
+           "id": 5,
+           "title": "Integrate Medium Blogs on your React App",
+           "desc": "",
+           "livedemo": "https://mehulk05.github.io/Medium-Blog-On-React-App#/",
+           "githurl": "https://github.com/mehulk05/Medium-Blog-On-React-App",
+           "mediumlink": "https://javascript.plainenglish.io/how-to-add-medium-blogs-on-your-react-app-a3898a729aad",
+           "imgUrl": "assets/images/z4.png",
+           "tech": "React JS"
+         },
+     
+     
+     
+         {
+           "id": 6,
+           "title": "News App using ReactJS (Parsing XML to JSON)",
+           "desc": "",
+           "livedemo": "https://mehulk05.github.io/NewsApp-using-React",
+           "githurl": "https://github.com/mehulk05/NewsApp-using-React",
+           "mediumlink": "https://codeburst.io/news-app-using-reactjs-f9752d7ab6ce",
+           "imgUrl": "assets/images/z24.png",
+           "tech": "React JS, XMl to JSON"
+         }
+     
+     
+     
+     
+       ],
+"educationData": [
+         {
+           "year": "2020 - 2023",
+           "type": "Diplôme",
+           "title": "Licence en Informatique de Gestion",
+           "subtitle": "Spécialité Business Intelligence",
+           "items": [
+             "Institut Supérieur De Gestion De Bizerte .",
+             "L'informatique appliquée à l'économie-gestion simplifie les tâches répétitives, améliorant l'efficacité opérationnelle et minimisant les erreurs potentielles .",
+             "Maintenu des notes moyennes à chaque semestre universitaire ."
+           ]
+         },
+         {
+           "year": "2018 - 2019",
+           "type": "Baccalauréat",
+           "title": "Baccalauréat en Économie et Gestion",
+           "subtitle": "Lycée Sécondaire Menzel Jemil",
+           "items": [
+             "Combiner l'économie-gestion avec l'informatique permet une analyse précise des données, aidant à identifier des tendances et modèles pour des décisions éclairées .",
+             "Grâce à une approche basée sur les données, la combinaison de ces domaines offre des décisions mieux informées et rentables pour les entreprises et les projets ."
+           ]
+         },
+         {
+           "year": "2015 - 2018",
+           "type": "École Secondaire",
+           "title": "Lycée Sécondaire Menzel Jemil",
+           "subtitle": "École Secondaire",
+           "items": [
+             "L'école secondaire se concentre sur les matières suivantes : mathématiques, anglais, sciences, informatique, économie-gestion, littérature et langues."
+           ]
+         }
+         
+         ],
+
+         "formContent":{ 
+             "name":"nom",
+             "email":"Adresse email",
+             "subject":"Sujet",
+             "tel":"22591468",
+             "myEmail":"ayoubsmirani9@gmail.com",
+             "message":"Ton Message"
+
+         }
+}
+
+

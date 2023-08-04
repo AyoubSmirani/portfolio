@@ -1,0 +1,104 @@
+
+ 
+<div class="section" id="experience" >
+    <div class="container cc-education" >
+        <div class="h1 text-center mb-5 title animate__animated animate__zoomIn" [ngClass]="{'active': !profileService.checkBack ,'inactive': profileService.checkBack}" >{{'titles.title3' | translate}}</div>
+        <div class="colorlib-narrow-content">
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="timeline-centered">
+                        <ng-container *ngFor="let exp of workexp; let i = index">
+                        <article class="timeline-entry animate-box animate__animated animate__fadeInLeft animate__delay-{{ i + 1 }}s"
+                        data-animate-effect="fadeInLeft" >
+                            <div class="timeline-entry-inner ">
+
+                                <div class="timeline-icon color-2" >
+                                    <i class="icon-pen2"></i>
+                                </div>
+
+                                <div class="timeline-label"  
+                                [ngClass]="{'darkShadow': !profileService.checkBack ,'lightShadow': profileService.checkBack}"
+                                >
+                                    <h2>{{exp.company}}<span>- &nbsp;{{exp.timeline}}, {{exp.location}}</span></h2>
+                                    <h4 class="mt-4"> {{exp.role}}</h4>
+                                    
+                                    <ul>
+                                      <li *ngFor="let work of exp.work | split">{{work}}</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </article>
+                        </ng-container>
+                        <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                            <div class="timeline-entry-inner">
+
+                                <div class="timeline-icon color-2">
+                                    <i class="icon-pen2"></i>
+                                </div>
+
+                                <div class="timeline-label">
+                                    <h2>Software Engineer <span>Feb 2021 to Present</span></h2>
+                                    <h4> Indianic InfoTech</h4>
+                                    <p>Working on web app built with Angular and Node Js</p>
+                                    <ul>
+                                        <li>Mean Stack</li>
+                                        <li>UI UX development</li>
+                                        <li>Web Development.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                            <div class="timeline-entry-inner">
+
+                                <div class="timeline-icon color-1">
+                                    <i class="icon-pen2"></i>
+                                </div>
+
+                                <div class="timeline-label">
+                                    <h2>Assistant System Trainee Engineer <span>June, 2019</span></h2>
+                                    <h4> TATA Consultancy Services</h4>
+                                    <p>Working on Okta Auth with Angular 9 and Angular Material</p>
+                                    <ul>
+                                        <li>Software development.</li>
+                                        <li>Application development.</li>
+                                        <li>Web Development.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                            <div class="timeline-entry-inner">
+                                <div class="timeline-icon color-2">
+                                    <i class="icon-pen2"></i>
+                                </div>
+                                <div class="timeline-label">
+                                    <h2>Intern <span>May, 2018 - August,2018</span></h2>
+                                    <h4> Intern at Inno Tracks</h4>
+                                    <p>Completed Internship on Android . Worked as an Intern to develop mobile application using android Studio. Technologies and Language used:
+                                    </p>
+                                    <ul>
+                                        <li>Android</li>
+                                        <li>Firebase</li>
+                                        <li>SqlLite</li>
+                                        <li>Java</li>
+                                        <li>Xml</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </article> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</div>
