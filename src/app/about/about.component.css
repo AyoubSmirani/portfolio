@@ -37,5 +37,7 @@ li{
     .boxContain {
       top: 50%;
     }
-  
+      .footer{
+      margin-top: 400px;
+    }
   }
